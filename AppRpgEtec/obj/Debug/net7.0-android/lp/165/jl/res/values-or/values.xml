@@ -1,0 +1,42 @@
+ size of a user's OneDrive that can download automatically" on PCs that don't have Files On-Demand, and "Set the default location for the OneDrive folder."
+
+If you disable or do not configure this setting, users will need to sign in with their work or school account to set up sync.
+
+</string>
+
+      <!-- DiskSpaceCheckThresholdMB -->
+      <string id="DiskSpaceCheckThresholdMB">Set the maximum size of a user's OneDrive that can download automatically</string>
+      <string id="DiskSpaceCheckThresholdMB_help">This setting is used in conjunction with "Silently sign in users to the OneDrive sync app with their Windows credentials." This setting lets you prompt users who have more than a specified amount of content in OneDrive to choose folders to sync during setup of the OneDrive sync app (OneDrive.exe).
+
+If you enable this setting, users who have more content than the value you specify will be shown the Choose Folders dialog box by default during OneDrive Setup.
+
+If you disable or do not configure this setting, when users set up the sync app, all files will be selected to sync.</string>
+
+      <!-- Settings below control behavior of Files-On-Demand (Cloud Files) -->
+      <string id="FilesOnDemandEnabled">Use OneDrive Files On-Demand</string>
+      <string id="FilesOnDemandEnabled_help">This setting lets you control whether OneDrive Files On-Demand is enabled for your organization.
+
+If you enable this setting, OneDrive Files On-Demand will be turned on by default.
+
+If you disable this setting, OneDrive Files On-Demand will be explicitly disabled and users can't turn it on.
+
+If you do not configure this setting, users can turn OneDrive Files On-Demand on or off.</string>
+
+      <string id="DehydrateSyncedTeamSites">Convert synced team site files to online-only files</string>
+      <string id="DehydrateSyncedTeamSites_help">This setting is used in conjunction with OneDrive Files On-Demand. When many users sync the same team sites, this setting lets you conserve bandwidth and free up space across devices by making synced team site files online-only files.
+
+If you enable this setting, team site files that were syncing before OneDrive Files On-Demand was enabled, will be converted (as a one-time action) to online-only files.
+
+If you disable or do not configure this setting, team site files will remain locally available unless users choose to make them online only.</string>
+
+    <!-- Restrict syncing with other organizations -->
+      <string id="AllowTenantList">Allow syncing OneDrive accounts for only specific organizations</string>
+      <string id="AllowTenantList_help">This setting lets you prevent users from easily uploading files to other organizations by specifying a list of allowed tenant IDs.
+
+If you enable this setting, users will get an error if they attempt to add an account from an organization that is not allowed. If a user has already added the account, the files will stop syncing.
+
+If you disable or do not configure this setting, users can add accounts from any organization.
+
+To block specific organizations instead, use "Block syncing OneDrive accounts for specific organizations."
+
+This setting will ta

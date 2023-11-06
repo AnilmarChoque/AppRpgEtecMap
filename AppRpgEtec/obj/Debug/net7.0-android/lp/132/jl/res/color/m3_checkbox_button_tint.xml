@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (c) 2016 Microsoft Corporation -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/PolicyDefinitions">
+  <displayName>Configurações de Política de Grupo do OneDrive</displayName>
+  <description>Várias configurações de política de grupo para o aplicativo de sincronização do OneDrive (OneDrive. exe), especialmente as específicas para a funcionalidade empresarial no aplicativo.</description>
+  <resources>
+    <stringTable>
+      <!-- general -->
+      <string id="OneDriveNGSCSettingCategory">OneDrive</string>
+      <string id="NucleusSettingCategory">Sincronização de Lista</string>
+
+      <!-- block syncing personal OneDrive -->
+      <string id="DisablePersonalSync">Impedir os usuários de sincronizar contas pessoais do OneDrive</string>
+      <string id="DisablePersonalSync_help">Esta configuração permite que você impeça os usuários de entrar com uma conta Microsoft para sincronizar arquivos pessoais do OneDrive.
+
+Se você habilitar essa configuração, os usuários não poderão configurar uma relação de sincronização para a conta pessoal do OneDrive. Os usuários que já estiverem 

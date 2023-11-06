@@ -1,0 +1,17 @@
+h / 2
+            color: control.enabled ? (control.pressed ? FlatStyle.lightFrameColor : FlatStyle.backgroundColor) : FlatStyle.disabledFillColor
+            border.color: !control.enabled ? FlatStyle.disabledFillColor :
+                (control.pressed ? FlatStyle.darkFrameColor :
+                (control.activeFocus ? FlatStyle.focusedColor :
+                (!Settings.hasTouchScreen && control.hovered ? FlatStyle.styleColor : FlatStyle.lightFrameColor)))
+            border.width: control.activeFocus && !control.pressed ? FlatStyle.twoPixels : FlatStyle.onePixel
+        }
+
+        Rectangle {
+            id: inner
+            anchors.centerIn: parent
+            implicitWidth: Math.round(FlatStyle.scaleFactor * 8)
+            width: implicitWidth + (outer.width % 2 + implicitWidth % 2) % 2
+            height: width
+            radius: width / 2
+            v
